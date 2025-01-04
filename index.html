@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITQC 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .dark-bg {
+            background: linear-gradient(180deg, rgba(1, 20, 124, 0.8), rgba(34, 34, 34, 1));
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            color: white;
+        }
+
+        .hero-button {
+            background-color: #01147C;
+            padding: 1rem 2rem;
+            color: white;
+            font-weight: 600;
+            border-radius: 9999px;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero-button:hover {
+            background-color: #01125D;
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .main-content {
+            flex: 1;
+            padding-bottom: 50px;
+        }
+    </style>
+</head>
+<body class="relative overflow-x-hidden dark-bg">
+
+    <!-- Header Section -->
+    <header class="relative bg-transparent z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-6">
+            <div class="flex items-center">
+                <h1 class="ml-3 text-lg sm:text-2xl font-bold text-white">ITQC 2025</h1>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-white hover:text-gray-200">Home</a>
+                <a href="about.html" class="text-white hover:text-gray-200">About</a>
+                <a href="schedule.html" class="text-white hover:text-gray-200">Schedule</a>
+                <a href="contact.html" class="text-white hover:text-gray-200">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="main-content">
+        <!-- Hero Section -->
+        <section class="relative text-white text-center py-36 z-10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl sm:text-6xl font-extrabold">
+                    India-Thai Quantum Conference 2025
+                </h2>
+                <p class="mt-4 text-lg sm:text-xl">
+                    Explore the cutting-edge innovations in quantum technologies at Prince Shri Venkateshwara Padmavathy Engineering College.
+                </p>
+                <div class="mt-6">
+                    <a href="#" class="hero-button">
+                        Register Now
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Quantum Computing Section -->
+        <section class="text-white py-20 bg-gray-900">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h3 class="text-3xl sm:text-4xl font-extrabold">What is Quantum Computing?</h3>
+                <p class="mt-4 text-lg sm:text-xl">
+                    Quantum computing leverages the principles of quantum mechanics to process information in fundamentally new ways. 
+                    Unlike classical computers, which use bits, quantum computers use qubits, allowing them to solve complex problems at unprecedented speeds.
+                </p>
+                <p class="mt-6 text-lg sm:text-xl">
+                    By attending ITQC 2025, you'll gain insights into the latest breakthroughs in quantum technology, connect with thought leaders, and explore 
+                    practical applications in fields such as cryptography, AI, finance, and healthcare.
+                </p>
+            </div>
+        </section>
+
+        <!-- Keynote Speakers Section -->
+        <section class="text-white text-center py-20 bg-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h3 class="text-3xl sm:text-4xl font-extrabold">Keynote Speakers</h3>
+                <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+                        <h4 class="font-bold text-xl">ABC</h4>
+                        <p>Quantum Computing.</p>
+                    </div>
+                    <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+                        <h4 class="font-bold text-xl">XYZ</h4>
+                        <p>Quantum Computing.</p>
+                    </div>
+                    <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+                        <h4 class="font-bold text-xl">PQR</h4>
+                        <p>Quantum Computing.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQs Section -->
+        <section class="text-white py-20 bg-gray-700">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-center">FAQs</h3>
+                <div class="mt-6 space-y-6">
+                    <div>
+                        <h4 class="font-bold">Who should attend ITQC 2025?</h4>
+                        <p>Anyone interested in quantum computing, including students, researchers, and industry professionals.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold">What topics will be covered?</h4>
+                        <p>Topics include quantum cryptography, AI, hardware development, and real-world applications of quantum technologies.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold">How can I register?</h4>
+                        <p>You can register online by clicking the "Register Now" button on the homepage.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold">What are the benefits of attending?</h4>
+                        <p>Gain exclusive insights, learn from experts, network with industry leaders, and explore career opportunities in the field.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold">Is the conference accessible to beginners?</h4>
+                        <p>Yes, we have sessions designed for beginners, making it suitable for anyone looking to explore quantum computing.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-white py-6 text-center">
+        <p>&copy; 2025 ITQC - All Rights Reserved</p>
+        <p class="mt-2">For inquiries, email us at <a href="mailto:prince@psvpec.in" class="text-blue-400">prince@psvpec.in</a></p>
+    </footer>
+
+</body>
+</html>

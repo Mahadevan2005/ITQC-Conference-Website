@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Schedule - ITQC 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .dark-bg {
+            background: linear-gradient(180deg, rgba(1, 20, 124, 0.8), rgba(34, 34, 34, 1)), url('your-dark-image-url.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            color: white;
+        }
+
+        .timeline {
+            position: relative;
+            margin: 4rem 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 100%;
+            background: #d8fe00;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin: 2rem 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 20px;
+            height: 20px;
+            background: #d8fe00;
+            border: 4px solid #01147C;
+            border-radius: 50%;
+        }
+
+        .timeline-content {
+            position: relative;
+            margin-top: 2rem;
+            padding: 1.5rem 2rem;
+            background: #2d2d2d;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            color: white;
+            max-width: 600px;
+        }
+
+        .timeline-content h4 {
+            font-size: 1.75rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: #d8fe00;
+        }
+
+        .timeline-content p {
+            font-size: 1.125rem;
+            line-height: 1.75;
+            margin: 0;
+        }
+    </style>
+</head>
+<body class="relative overflow-x-hidden dark-bg">
+
+    <!-- Header Section -->
+    <header class="relative bg-transparent z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-6">
+            <h1 class="ml-3 text-lg sm:text-2xl font-bold text-white">ITQC 2025</h1>
+            <!-- Navigation -->
+            <nav class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-white hover:text-gray-200">Home</a>
+                <a href="about.html" class="text-white hover:text-gray-200">About</a>
+                <a href="schedule.html" class="text-white hover:text-gray-200">Schedule</a>
+                <a href="contact.html" class="text-white hover:text-gray-200">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Event Schedule Section -->
+    <section id="schedule" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
+            <h3 class="text-3xl sm:text-4xl font-extrabold text-center mb-12">Event Schedule</h3>
+            <ul class="timeline">
+                <!-- Day 1 -->
+                <li class="timeline-item">
+                    <div class="timeline-content">
+                        <h4>May 29, 2025 - Inaugural Ceremony</h4>
+                        <p>Kick off ITQC 2025 with the official opening ceremony. Join keynote speakers as they discuss the future of quantum computing and global advancements.</p>
+                    </div>
+                </li>
+                <!-- Day 2 -->
+                <li class="timeline-item">
+                    <div class="timeline-content">
+                        <h4>May 30, 2025 - Technical Sessions</h4>
+                        <p>Participate in technical sessions exploring quantum algorithms, cryptography, and applications of quantum technology in industries like healthcare and AI.</p>
+                    </div>
+                </li>
+                <!-- Day 3 -->
+                <li class="timeline-item">
+                    <div class="timeline-content">
+                        <h4>May 31, 2025 - Panel Discussions & Closing</h4>
+                        <p>Join experts in panel discussions on the global impact of quantum computing, followed by the official closing ceremony of ITQC 2025.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-white py-6 text-center">
+        <p>&copy; 2025 ITQC - All Rights Reserved</p>
+        <p class="mt-2">For inquiries, email us at <a href="mailto:prince@psvpec.in" class="text-blue-400">prince@psvpec.in</a></p>
+    </footer>
+
+</body>
+</html>

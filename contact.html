@@ -15,7 +15,7 @@
         }
 
         .hero-button {
-            background-color: #01147C; /* Navy button */
+            background-color: #01147C;
             padding: 1rem 2rem;
             color: white;
             font-weight: 600;
@@ -24,11 +24,11 @@
         }
 
         footer {
-            background-color: #01147C; /* Navy footer */
+            background-color: #01147C;
         }
 
         .hero-button:hover {
-            background-color: #01125D; /* Darker Navy on hover */
+            background-color: #01125D;
         }
     </style>
 </head>
@@ -48,13 +48,29 @@
                 <a href="schedule.html" class="text-white hover:text-gray-200">Schedule</a>
                 <a href="contact.html" class="text-white hover:text-gray-200">Contact</a>
             </nav>
+
+            <!-- Mobile Navigation -->
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-white focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+                <div id="menu" class="hidden absolute bg-gray-900 text-white rounded-md shadow-lg mt-2 w-48 right-4">
+                    <a href="index.html" class="block px-4 py-2 hover:bg-gray-800">Home</a>
+                    <a href="about.html" class="block px-4 py-2 hover:bg-gray-800">About</a>
+                    <a href="schedule.html" class="block px-4 py-2 hover:bg-gray-800">Schedule</a>
+                    <a href="contact.html" class="block px-4 py-2 hover:bg-gray-800">Contact</a>
+                </div>
+            </div>
         </div>
     </header>
 
     <div class="mb-6">
         <img src="logo.png" alt="PSVPEC Logo" class="mx-auto mb-4 max-w-xs">
     </div>
-    <!-- Contact Section (About PSVPEC and Quantum Computing) -->
+
+    <!-- Contact Section -->
     <section class="text-white text-center py-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h3 class="text-3xl sm:text-4xl font-extrabold mb-6">Prince Shri Venkateshwara Padmavathy Engineering College</h3>
@@ -81,5 +97,14 @@
         <p class="mt-2">For inquiries, email us at <a href="mailto:prince@psvpec.in" class="text-blue-400">prince@psvpec.in</a></p>
     </footer>
 
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const menu = document.getElementById('menu');
+
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>

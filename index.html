@@ -24,7 +24,20 @@
         .hero-button:hover {
             background-color: #01125D;
         }
-    </style>
+        .logos-container {
+            display: flex;
+            animation: scroll 20s linear infinite;
+        }
+    
+        @keyframes scroll {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+</style>
 </head>
 <body class="relative overflow-x-hidden dark-bg">
     <!-- Header Section -->
@@ -86,6 +99,29 @@
                 </p>
             </div>
         </section>
+
+
+        <section class="text-white py-16 sm:py-20 bg-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h3 class="text-2xl sm:text-3xl font-extrabold">Funding Sources</h3>
+                <div class="mt-6 overflow-hidden relative">
+                    <div class="logos-container flex space-x-8 animate-scroll">
+                        <!-- Add organization logos here -->
+                        <img src="logo1.png" alt="Organization 1" class="h-16 sm:h-20">
+                        <img src="logo2.png" alt="Organization 2" class="h-16 sm:h-20">
+                        <img src="logo3.png" alt="Organization 3" class="h-16 sm:h-20">
+                        <img src="logo4.png" alt="Organization 4" class="h-16 sm:h-20">
+                        <img src="logo5.png" alt="Organization 5" class="h-16 sm:h-20">
+                        <!-- Repeat logos to create an infinite loop -->
+                        <img src="logo1.png" alt="Organization 1" class="h-16 sm:h-20">
+                        <img src="logo2.png" alt="Organization 2" class="h-16 sm:h-20">
+                        <img src="logo3.png" alt="Organization 3" class="h-16 sm:h-20">
+                        <img src="logo4.png" alt="Organization 4" class="h-16 sm:h-20">
+                        <img src="logo5.png" alt="Organization 5" class="h-16 sm:h-20">
+                    </div>
+                </div>
+            </div>
+    </section>
 
         <!-- Keynote Speakers Section -->
         <section class="text-white text-center py-16 sm:py-20 bg-gray-800">

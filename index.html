@@ -25,25 +25,18 @@
             background-color: #01125D;
         }
         .logos-container {
-        display: flex;
-        animation: scroll 10s linear infinite;
-        width: max-content;
+            display: flex;
+            animation: scroll 10s linear infinite;
+        }
+    
+        @keyframes scroll {
+            from {
+                transform: translateX(0);
             }
-        
-            .logos-wrapper {
-                display: flex;
-                overflow: hidden;
-                position: relative;
+            to {
+                transform: translateX(-100%);
             }
-        
-            @keyframes scroll {
-                0% {
-                    transform: translateX(0);
-                }
-                100% {
-                    transform: translateX(-100%);
-                }
-            }
+        }
 </style>
 </head>
 <body class="relative overflow-x-hidden dark-bg">
@@ -109,26 +102,26 @@
 
 
         <section class="text-white py-16 sm:py-20 bg-gray-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h3 class="text-2xl sm:text-3xl font-extrabold">Funding Sources</h3>
-        <div class="logos-wrapper mt-6">
-            <div class="logos-container">
-                <!-- Add organization logos here -->
-                <img src="aicte.png" alt="Organization 1" class="h-16 sm:h-20">
-                <img src="dst.png" alt="Organization 2" class="h-16 sm:h-20">
-                <img src="csir.webp" alt="Organization 3" class="h-16 sm:h-20">
-                <img src="dae.png" alt="Organization 4" class="h-16 sm:h-20">
-                <img src="drdo.png" alt="Organization 5" class="h-16 sm:h-20">
-                <!-- Duplicate logos for seamless scrolling -->
-                <img src="aicte.png" alt="Organization 1" class="h-16 sm:h-20">
-                <img src="dst.png" alt="Organization 2" class="h-16 sm:h-20">
-                <img src="csir.webp" alt="Organization 3" class="h-16 sm:h-20">
-                <img src="dae.png" alt="Organization 4" class="h-16 sm:h-20">
-                <img src="drdo.png" alt="Organization 5" class="h-16 sm:h-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h3 class="text-2xl sm:text-3xl font-extrabold">Funding Sources</h3>
+                <div class="mt-6 overflow-hidden relative">
+                    <div class="logos-container flex space-x-8 animate-scroll">
+                        <!-- Add organization logos here -->
+                        <img src="aicte.png" alt="Organization 1" class="h-16 sm:h-20">
+                        <img src="dst.png" alt="Organization 2" class="h-16 sm:h-20">
+                        <img src="csir.webp" alt="Organization 3" class="h-16 sm:h-20">
+                        <img src="dae.png" alt="Organization 4" class="h-16 sm:h-20">
+                        <img src="drdo.png" alt="Organization 5" class="h-16 sm:h-20">
+                        <!-- Repeat logos to create an infinite loop -->
+                        <img src="aicte.png" alt="Organization 1" class="h-16 sm:h-20">
+                        <img src="dst.png" alt="Organization 2" class="h-16 sm:h-20">
+                        <img src="csir.webp" alt="Organization 3" class="h-16 sm:h-20">
+                        <img src="dae.png" alt="Organization 4" class="h-16 sm:h-20">
+                        <img src="drdo.png" alt="Organization 5" class="h-16 sm:h-20">
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</section>
+    </section>
 
         <!-- Keynote Speakers Section -->
         <section class="text-white text-center py-16 sm:py-20 bg-gray-800">

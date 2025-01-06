@@ -10,13 +10,12 @@
             background: linear-gradient(180deg, rgba(1, 20, 124, 0.8), rgba(34, 34, 34, 1));
             background-size: cover;
             background-position: center;
-            height: 100%;
+            min-height: 100vh;
             color: white;
         }
 
         .timeline {
             position: relative;
-            margin: 4rem 0;
             padding: 0;
             list-style: none;
         }
@@ -57,7 +56,7 @@
         .timeline-content {
             position: relative;
             margin-top: 2rem;
-            padding: 1.5rem 2rem;
+            padding: 2rem;
             background: #2d2d2d;
             border-radius: 12px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
@@ -77,21 +76,26 @@
             line-height: 1.75;
             margin: 0;
         }
+
+        .decorative-line {
+            width: 100px;
+            height: 4px;
+            background: #d8fe00;
+            margin: 1rem auto;
+        }
     </style>
 </head>
-<body class="relative overflow-x-hidden dark-bg">
+<body class="dark-bg">
 
     <!-- Header Section -->
-    <header class="relative bg-transparent z-10">
+    <header class="bg-transparent z-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-6">
             <img src="itqc-logo.jpg" alt="ITQC 2025 Logo" class="h-20 sm:h-28" style="max-height: 100px; width: auto;">
-            <!-- Mobile Navigation Toggle -->
             <button id="mobile-menu-button" class="text-white md:hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
                 </svg>
             </button>
-            <!-- Navigation -->
             <nav class="hidden md:flex space-x-6">
                 <a href="index.html" class="text-white hover:text-gray-200">Home</a>
                 <a href="about.html" class="text-white hover:text-gray-200">About</a>
@@ -100,7 +104,6 @@
                 <a href="contact.html" class="text-white hover:text-gray-200">Contact</a>
             </nav>
         </div>
-        <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-gray-800 text-white">
             <a href="index.html" class="block py-2 px-4 hover:bg-gray-700">Home</a>
             <a href="about.html" class="block py-2 px-4 hover:bg-gray-700">About</a>
@@ -112,8 +115,9 @@
 
     <!-- Event Schedule Section -->
     <section id="schedule" class="py-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
-            <h3 class="text-3xl sm:text-4xl font-extrabold text-center mb-12">Event Schedule</h3>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-3xl sm:text-4xl font-extrabold text-center mb-8">Event Schedule</h3>
+            <div class="decorative-line"></div>
             <ul class="timeline">
                 <!-- Day 1 -->
                 <li class="timeline-item">

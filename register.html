@@ -40,7 +40,7 @@
             </div>
 
             <!-- Hamburger Icon -->
-            <button id="hamburger" class="block md:hidden text-white focus:outline-none">
+            <button id="mobile-menu-button" class="block md:hidden text-white focus:outline-none">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-8 h-8">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
@@ -57,7 +57,7 @@
         </div>
 
         <!-- Mobile Navigation -->
-        <div id="mobile-nav" class="mobile-nav absolute top-16 left-0 right-0 bg-gray-900 text-white hidden">
+        <div id="mobile-menu" class="mobile-nav absolute top-16 left-0 right-0 bg-gray-900 text-white hidden">
             <a href="index.html" class="block py-2 px-4 hover:bg-gray-800">Home</a>
             <a href="about.html" class="block py-2 px-4 hover:bg-gray-800">About</a>
             <a href="register.html" class="block py-2 px-4 hover:bg-gray-800">Register</a>
@@ -106,13 +106,12 @@
         <p>&copy; 2025 ITQC - All Rights Reserved</p>
     </footer>
 
-    <script>
-        // Hamburger Menu Toggle
-        const hamburger = document.getElementById('hamburger');
-        const mobileNav = document.getElementById('mobile-nav');
+   <script>
+        const mobileMenuButton = document.getElementById("mobile-menu-button");
+        const mobileMenu = document.getElementById("mobile-menu");
 
-        hamburger.addEventListener('click', () => {
-            mobileNav.classList.toggle('hidden');
+        mobileMenuButton.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
         });
     </script>
 </body>

@@ -7,26 +7,37 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         .dark-bg {
-            background-image: url('bg-img.webp'); /* Add your image path here */
+            background-image: url('bg-img.webp'); /* Replace with your image path */
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            height: 100vh; /* Ensure it covers the full viewport height */
-            color: white;
+            position: relative;
+            height: 100vh;
         }
-        .no-bg {
-            background: none; /* Remove background image */
+        .dark-bg::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+            z-index: 1;
+        }
+        .content {
+            position: relative;
+            z-index: 2;
         }
         .hero-button {
-            background-color: #01147C;
+            background-color: #FFA500;
             padding: 1rem 2rem;
             color: white;
-            font-weight: 600;
+            font-weight: 700;
             border-radius: 9999px;
             transition: background-color 0.3s ease;
         }
         .hero-button:hover {
-            background-color: #01125D;
+            background-color: #CC8400;
         }
         .logos-container {
             display: flex;
@@ -42,23 +53,23 @@
         }
     </style>
 </head>
-<body class="relative overflow-x-hidden dark-bg">
+<body class="dark-bg text-white">
     <!-- Header Section -->
-    <header class="bg-transparent z-10">
+    <header class="content">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-6">
-            <img src="itqc-logo.jpg" alt="ITQC 2025 Logo" class="h-20 sm:h-28" style="max-height: 100px; width: auto;">
+            <img src="itqc-logo.jpg" alt="ITQC 2025 Logo" class="h-16 sm:h-20">
             <button id="mobile-menu-button" class="text-white md:hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
                 </svg>
             </button>
             <nav class="hidden md:flex space-x-6">
-                <a href="index.html" class="text-white hover:text-gray-200">Home</a>
-                <a href="about.html" class="text-white hover:text-gray-200">About</a>
-                <a href="register.html" class="text-white hover:text-gray-200">Register</a>
-                <a href="schedule.html" class="text-white hover:text-gray-200">Schedule</a>
-                <a href="accommodation.html" class="text-white hover:text-gray-200">Accommodation</a>
-                <a href="contact.html" class="text-white hover:text-gray-200">Contact Us</a>
+                <a href="index.html" class="hover:text-gray-300">Home</a>
+                <a href="about.html" class="hover:text-gray-300">About</a>
+                <a href="register.html" class="hover:text-gray-300">Register</a>
+                <a href="schedule.html" class="hover:text-gray-300">Schedule</a>
+                <a href="accommodation.html" class="hover:text-gray-300">Accommodation</a>
+                <a href="contact.html" class="hover:text-gray-300">Contact Us</a>
             </nav>
         </div>
         <div id="mobile-menu" class="hidden md:hidden bg-gray-800 text-white">
@@ -69,38 +80,22 @@
             <a href="accommodation.html" class="block py-2 px-4 hover:bg-gray-700">Accommodation</a>
             <a href="contact.html" class="block py-2 px-4 hover:bg-gray-700">Contact Us</a>
         </div>
-        <div class="main-content">
-        <!-- Hero Section -->
-        <section class="relative text-black text-center py-12 z-10">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-4xl sm:text-6xl font-extrabold">
-                    ITQC 2025
-                </h2>
-                <p class="text-xl sm:text-2xl font-medium mt-4">
-                    The 1st International Conference on
-                </p>
-                <h3 class="text-3xl sm:text-5xl font-bold mt-2">
-                    India-Thai Quantum Conference
-                </h3>
-                <p class="text-lg sm:text-xl font-normal mt-4">
-                    📅 29-31 May 2025 &nbsp; | &nbsp; 📍Chennai, India
-                </p>
-                <div class="mt-8 flex flex-col space-y-4 sm:space-y-0 sm:flex-row sm:justify-center sm:space-x-4">
-                    <a href="speakers.html" class="px-6 py-3 bg-green-500 text-white rounded-full font-semibold hover:bg-green-600">
-                        Speaker List
-                    </a>
-                    <a href="schedule.html" class="px-6 py-3 bg-blue-500 text-white rounded-full font-semibold hover:bg-blue-600">
-                        Conference Program
-                    </a>
-                    <a href="#" class="px-6 py-3 bg-orange-500 text-white rounded-full font-semibold hover:bg-orange-600">
-                        Abstract Book
-                    </a>
-                </div>
-            </div>
-        </section>
-    </div>
-
     </header>
+
+    <!-- Hero Section -->
+    <section class="content text-center py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-5xl sm:text-7xl font-extrabold text-yellow-400">ITQC 2025</h2>
+            <p class="text-xl sm:text-2xl font-medium mt-4 text-gray-300">The 1st International Conference on</p>
+            <h3 class="text-3xl sm:text-5xl font-bold mt-2 text-white">India-Thai Quantum Conference</h3>
+            <p class="text-lg sm:text-xl font-light mt-4 text-gray-300">📅 29-31 May 2025 &nbsp; | &nbsp; 📍Chennai, India</p>
+            <div class="mt-8 flex flex-col space-y-4 sm:space-y-0 sm:flex-row sm:justify-center sm:space-x-4">
+                <a href="speakers.html" class="hero-button">Speaker List</a>
+                <a href="schedule.html" class="hero-button bg-blue-500 hover:bg-blue-600">Conference Program</a>
+                <a href="#" class="hero-button bg-green-500 hover:bg-green-600">Abstract Book</a>
+            </div>
+        </div>
+    </section>
 
     <!-- Main Content Section -->
     

@@ -7,7 +7,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         .dark-bg {
-            background: linear-gradient(180deg, rgba(1, 20, 124, 0.8), rgba(34, 34, 34, 1));
+            /* Add your background image URL here */
+            background: linear-gradient(180deg, rgba(1, 20, 124, 0.8), rgba(34, 34, 34, 1)), 
+                        url('your-background-image.jpg'); /* Replace with the path to your image */
             background-size: cover;
             background-position: center;
             height: 100%;
@@ -28,7 +30,6 @@
             display: flex;
             animation: scroll 10s linear infinite;
         }
-    
         @keyframes scroll {
             from {
                 transform: translateX(0);
@@ -37,7 +38,7 @@
                 transform: translateX(-100%);
             }
         }
-</style>
+    </style>
 </head>
 <body class="relative overflow-x-hidden dark-bg">
     <!-- Header Section -->
@@ -66,126 +67,97 @@
         </div>
     </header>
 
-
     <!-- Main Content Section -->
     <div class="main-content">
-    <!-- Hero Section -->
-    <section class="relative text-white text-center py-12 z-10 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl sm:text-6xl font-extrabold">
-                ITQC 2025
-            </h2>
-            <p class="text-xl sm:text-2xl font-medium mt-4">
-                The 1st International Conference on
+        <!-- Hero Section -->
+        <section class="relative text-white text-center py-12 z-10 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl sm:text-6xl font-extrabold">
+                    ITQC 2025
+                </h2>
+                <p class="text-xl sm:text-2xl font-medium mt-4">
+                    The 1st International Conference on
+                </p>
+                <h3 class="text-3xl sm:text-5xl font-bold mt-2">
+                    India-Thai Quantum Conference
+                </h3>
+                <p class="text-lg sm:text-xl font-normal mt-4">
+                    📅 29-31 May 2025 &nbsp; | &nbsp; 📍 Chennai, India
+                </p>
+                <div class="mt-8 flex justify-center space-x-4">
+                    <a href="#" class="px-6 py-3 bg-green-500 text-white rounded-md font-semibold hover:bg-green-600">
+                        Speaker List
+                    </a>
+                    <a href="#" class="px-6 py-3 bg-blue-500 text-white rounded-md font-semibold hover:bg-blue-600">
+                        Conference Program
+                    </a>
+                    <a href="#" class="px-6 py-3 bg-orange-500 text-white rounded-md font-semibold hover:bg-orange-600">
+                        Abstract Book
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- About Quantum Computing Section -->
+    <section class="text-white py-16 sm:py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="text-2xl sm:text-3xl font-extrabold">What is Quantum Computing?</h3>
+            <p class="mt-4 text-sm sm:text-lg">
+                Quantum computing leverages the principles of quantum mechanics to process information in fundamentally new ways. 
+                Unlike classical computers, which use bits, quantum computers use qubits, allowing them to solve complex problems at unprecedented speeds.
             </p>
-            <h3 class="text-3xl sm:text-5xl font-bold mt-2">
-                India-Thai Quantum Conference
-            </h3>
-            <p class="text-lg sm:text-xl font-normal mt-4">
-                📅 29-31 May 2025 &nbsp; | &nbsp; 📍 Chennai, India
+            <p class="mt-6 text-sm sm:text-lg">
+                By attending ITQC 2025, you'll gain insights into the latest breakthroughs in quantum technology, connect with thought leaders, and explore 
+                practical applications in fields such as cryptography, AI, finance, and healthcare.
             </p>
-            <div class="mt-8 flex justify-center space-x-4">
-                <a href="#" class="px-6 py-3 bg-green-500 text-white rounded-md font-semibold hover:bg-green-600">
-                    Speaker List
-                </a>
-                <a href="#" class="px-6 py-3 bg-blue-500 text-white rounded-md font-semibold hover:bg-blue-600">
-                    Conference Program
-                </a>
-                <a href="#" class="px-6 py-3 bg-orange-500 text-white rounded-md font-semibold hover:bg-orange-600">
-                    Abstract Book
-                </a>
+        </div>
+    </section>
+
+    <!-- Funding Sources Section -->
+    <section class="text-white py-16 sm:py-20 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="text-2xl sm:text-3xl font-extrabold">Funding Sources</h3>
+            <div class="mt-6 overflow-hidden relative">
+                <div class="logos-container flex space-x-8 animate-scroll">
+                    <img src="aicte.png" alt="Organization 1" class="h-16 sm:h-20">
+                    <img src="dst.png" alt="Organization 2" class="h-16 sm:h-20">
+                    <img src="csir.webp" alt="Organization 3" class="h-16 sm:h-20">
+                    <img src="dae.png" alt="Organization 4" class="h-16 sm:h-20">
+                    <img src="drdo.png" alt="Organization 5" class="h-16 sm:h-20">
+                </div>
             </div>
         </div>
     </section>
-</div>
 
-        <!-- About Quantum Computing Section -->
-        <section class="text-white py-16 sm:py-20 bg-gray-900">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h3 class="text-2xl sm:text-3xl font-extrabold">What is Quantum Computing?</h3>
-                <p class="mt-4 text-sm sm:text-lg">
-                    Quantum computing leverages the principles of quantum mechanics to process information in fundamentally new ways. 
-                    Unlike classical computers, which use bits, quantum computers use qubits, allowing them to solve complex problems at unprecedented speeds.
-                </p>
-                <p class="mt-6 text-sm sm:text-lg">
-                    By attending ITQC 2025, you'll gain insights into the latest breakthroughs in quantum technology, connect with thought leaders, and explore 
-                    practical applications in fields such as cryptography, AI, finance, and healthcare.
-                </p>
-            </div>
-        </section>
-
-
-        <section class="text-white py-16 sm:py-20 bg-gray-800">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h3 class="text-2xl sm:text-3xl font-extrabold">Funding Sources</h3>
-                <div class="mt-6 overflow-hidden relative">
-                    <div class="logos-container flex space-x-8 animate-scroll">
-                        <!-- Add organization logos here -->
-                        <img src="aicte.png" alt="Organization 1" class="h-16 sm:h-20">
-                        <img src="dst.png" alt="Organization 2" class="h-16 sm:h-20">
-                        <img src="csir.webp" alt="Organization 3" class="h-16 sm:h-20">
-                        <img src="dae.png" alt="Organization 4" class="h-16 sm:h-20">
-                        <img src="drdo.png" alt="Organization 5" class="h-16 sm:h-20">
-                        <!-- Repeat logos to create an infinite loop -->
-                        <img src="aicte.png" alt="Organization 1" class="h-16 sm:h-20">
-                        <img src="dst.png" alt="Organization 2" class="h-16 sm:h-20">
-                        <img src="csir.webp" alt="Organization 3" class="h-16 sm:h-20">
-                        <img src="dae.png" alt="Organization 4" class="h-16 sm:h-20">
-                        <img src="drdo.png" alt="Organization 5" class="h-16 sm:h-20">
-                    </div>
+    <!-- FAQs Section -->
+    <section class="text-white py-16 sm:py-20 bg-gray-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-center">FAQs</h3>
+            <div class="mt-6 space-y-6">
+                <div>
+                    <h4 class="font-bold">Who should attend ITQC 2025?</h4>
+                    <p>Anyone interested in quantum computing, including students, researchers, and industry professionals.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold">What topics will be covered?</h4>
+                    <p>Topics include quantum cryptography, AI, hardware development, and real-world applications of quantum technologies.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold">How can I register?</h4>
+                    <p>You can register online by clicking the "Register Now" button on the homepage.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold">What are the benefits of attending?</h4>
+                    <p>Gain exclusive insights, learn from experts, network with industry leaders, and explore career opportunities in the field.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold">Is the conference accessible to beginners?</h4>
+                    <p>Yes, we have sessions designed for beginners, making it suitable for anyone looking to explore quantum computing.</p>
                 </div>
             </div>
+        </div>
     </section>
-
-        <!-- Keynote Speakers Section -->
-        <section class="text-white text-center py-16 sm:py-20 bg-gray-800">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h3 class="text-2xl sm:text-3xl font-extrabold">Keynote Speakers</h3>
-                <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-                    <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
-                        <h4 class="font-bold text-lg">Prof. ABC</h4>
-                        <p>Quantum Computing Expert</p>
-                    </div>
-                    <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
-                        <h4 class="font-bold text-lg">Dr. XYZ</h4>
-                        <p>AI and Quantum Specialist</p>
-                    </div>
-                    <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
-                        <h4 class="font-bold text-lg">Ms. PQR</h4>
-                        <p>Quantum Hardware Researcher</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- FAQs Section -->
-        <section class="text-white py-16 sm:py-20 bg-gray-700">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h3 class="text-2xl sm:text-3xl font-extrabold text-center">FAQs</h3>
-                <div class="mt-6 space-y-6">
-                    <div>
-                        <h4 class="font-bold">Who should attend ITQC 2025?</h4>
-                        <p>Anyone interested in quantum computing, including students, researchers, and industry professionals.</p>
-                    </div>
-                    <div>
-                        <h4 class="font-bold">What topics will be covered?</h4>
-                        <p>Topics include quantum cryptography, AI, hardware development, and real-world applications of quantum technologies.</p>
-                    </div>
-                    <div>
-                        <h4 class="font-bold">How can I register?</h4>
-                        <p>You can register online by clicking the "Register Now" button on the homepage.</p>
-                    </div>
-                    <div>
-                        <h4 class="font-bold">What are the benefits of attending?</h4>
-                        <p>Gain exclusive insights, learn from experts, network with industry leaders, and explore career opportunities in the field.</p>
-                    </div>
-                    <div>
-                        <h4 class="font-bold">Is the conference accessible to beginners?</h4>
-                        <p>Yes, we have sessions designed for beginners, making it suitable for anyone looking to explore quantum computing.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
     </div>
 
     <!-- Footer Section -->
@@ -202,6 +174,5 @@
             mobileMenu.classList.toggle("hidden");
         });
     </script>
-
 </body>
 </html>
